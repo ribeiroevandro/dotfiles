@@ -1,6 +1,6 @@
 require("nvim-web-devicons").set_icon {
   res = {
-    icon = "ﬦ",
+    icon = " ",
     color = "#e6484f",
     name = "ReScript"
   },
