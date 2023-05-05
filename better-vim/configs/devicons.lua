@@ -1,6 +1,6 @@
 require("nvim-web-devicons").set_icon {
   res = {
-    icon = " ",
+    icon = "",
     color = "#e6484f",
     name = "ReScript"
   },
@@ -10,13 +10,18 @@ require("nvim-web-devicons").set_icon {
     name = "Zsh"
   },
   [".eslintrc.json"] = {
-    icon = " ",
+    icon = "",
     color = "#4b32c3",
     name = "Eslint"
   },
   ["tailwind.config.js"] = {
-    icon = "󱏿 ",
+    icon = "󱏿",
     color = "#3b82f6",
     name = "TailwindCSS"
+  },
+  ["babel.config.js"] = {
+    icon = "󰨥",
+    color = "#f5da55",
+    name = "Babel"
   }
 }
