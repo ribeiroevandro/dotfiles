@@ -1,34 +1,39 @@
+local plugins  = require "better-vim.configs.plugins"
+local lualine  = require "better-vim.configs.lualine"
+local mappings = require "better-vim.configs.mappings"
+
 return {
-  mappings = {
-    leader = ",",
-    custom = {
-      ["<c-w>"] = { ":bd<CR>", "Close file" },
-      ["<c-q>"] = { ":q!<CR>", " Quit" },
-      ["<leader>s"] = { "s", "勒Reload Neovim Config" },
-      ["<leader>e"] = { "<cmd>NvimTreeToggle<CR>", " Toggle explorer" },
-      ["<leader>zm"] = { "<cmd>ZenMode<CR>", "ZenMode" },
-    }
-  },
-  theme = {
-    name = "catppuccin",
-    catppuccin_flavour = "mocha"
-  },
-  lualine = {
-    options = {
-      theme = "catppuccin"
-    },
-    sections = {
-      b = { 'branch' },
-      c = {
-        { 'diff',    color = { bg = '#45475A' }, separator = { left = '', right = '' } },
-        { 'filename' }
-      },
-      x = {
-        { 'diagnostics', separator = { left = '|', right = '|' } },
-        { 'filetype' },
-      },
-      y = { 'progress' },
-      z = { 'location' }
-    },
-  }
+	mappings = mappings,
+	plugins = plugins,
+	lualine = lualine,
+	theme = {
+		name = "catppuccin",
+		catppuccin_flavour = "mocha"
+	},
+	lsps = {
+		prismals = {},
+		astro = {},
+		tailwindcss = {}
+	},
+	formatters = {
+		blade_formatter = {},
+	},
+	treesitter = "all",
+	flags = {
+		format_on_save = true
+	},
+	hooks = {
+		after_setup = function()
+			require "better-vim.configs.devicons"
+			require "better-vim.configs.signs"
+			vim.cmd [[
+				nnoremap <A-Down> :m .+1<CR>==
+				nnoremap <A-Up> :m .-2<CR>==
+				inoremap <A-Down> <Esc>:m .+1<CR>==gi
+				inoremap <A-Up> <Esc>:m .-2<CR>==gi
+				vnoremap <A-Down> :m '>+1<CR>gv=gv
+				vnoremap <A-Up> :m '<-2<CR>gv=gv
+			]]
+		end
+	}
 }

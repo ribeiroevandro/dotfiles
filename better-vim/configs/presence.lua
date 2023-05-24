@@ -1,4 +1,4 @@
-require("presence"):setup({
+return {
   auto_update = true,
   client_id = "1065760436861030400",
   neovim_image_text = "Neovim at its best",
@@ -20,4 +20,4 @@ require("presence"):setup({
 
     return string.format("Reading %s", buf_name)
   end
-})
+}
