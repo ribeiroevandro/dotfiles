@@ -1,11 +1,13 @@
 local plugins  = require "better-vim.configs.plugins"
 local lualine  = require "better-vim.configs.lualine"
 local mappings = require "better-vim.configs.mappings"
+local noice    = require "better-vim.configs.noice"
 
 return {
 	mappings = mappings,
 	plugins = plugins,
 	lualine = lualine,
+	noice = noice,
 	theme = {
 		name = "catppuccin",
 		catppuccin_flavour = "mocha"
