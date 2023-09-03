@@ -155,28 +155,6 @@ zinit light zsh-users/zsh-history-substring-search
 zinit light zsh-users/zsh-completions
 zinit light buonomo/yarn-completion
 
-function ghLogin() {
-  case $1 in
-    "pessoal")
-      gh auth login --with-token < ~/Documents/token-pessoal.txt
-      ssh-add -D ~/.ssh/cloudfox/id_rsa_cloudfox
-      ssh-add --apple-use-keychain ~/.ssh/id_rsa
-      git config --global user.email ribeiroevandro@live.com
-      msg_ok "Logado com a conta pessoal"
-      ;;
-    "cloudfox")
-      gh auth login --with-token < ~/.ssh/cloudfox/token.txt
-      ssh-add -D ~/.ssh/id_rsa
-      ssh-add --apple-use-keychain ~/.ssh/cloudfox/id_rsa_cloudfox
-      git config --global user.email evandroribeiro@cloudfox.net
-      msg_ok "Logado com a conta da CloudFox"
-      ;;
-    *)
-      msg_error "Informe uma conta"
-      ;;
-  esac
-}
-
 function app() {
   case $1 in
     "--aab")
