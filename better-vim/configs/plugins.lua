@@ -1,4 +1,4 @@
-local presence = require "better-vim.configs.presence"
+-- local presence = require "better-vim.configs.presence"
 
 return {
   { "wakatime/vim-wakatime" },
@@ -13,10 +13,10 @@ return {
   { "jwalton512/vim-blade" },
   { "wojciechkepka/vim-github-dark" },
   { "rescript-lang/vim-rescript" },
-  {
-    "andweeb/presence.nvim",
-    opts = presence
-  },
+  -- {
+  --   "andweeb/presence.nvim",
+  --   opts = presence
+  -- },
   { "lewis6991/gitsigns.nvim" },
   { "f-person/git-blame.nvim" },
   { "wuelnerdotexe/vim-astro" },
