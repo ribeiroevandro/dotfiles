@@ -3,10 +3,16 @@
 # Uso: ./install.sh [PASTA_DE_DESTINO]
 # Ou defina a variável de ambiente DOTFILES_DEST_DIR
 
-# Pergunta a pasta de destino ao usuário
-read -e -p "Digite o caminho da pasta de destino para o clone do repositório (ex: ~/dotfiles): " DEST_DIR
+# Define a pasta de destino
+if [ -n "$1" ]; then
+  DEST_DIR="$1"
+elif [ -n "$DOTFILES_DEST_DIR" ]; then
+  DEST_DIR="$DOTFILES_DEST_DIR"
+else
+  DEST_DIR="$HOME/dotfiles"
+fi
 DEST_DIR=${DEST_DIR/#\~/$HOME} # Expande ~ para $HOME
-REPO_URL="https://github.com/ribeiroevandro/dotfiles.git" # Substitua pelo seu repositório
+REPO_URL="https://github.com/ribeiroevandro/dotfiles.git"
 
 echo "[INFO] Usando a pasta de destino: $DEST_DIR"
 
@@ -18,7 +24,6 @@ else
   echo "[OK] Pasta de destino já existe: $DEST_DIR"
 fi
 
-# Caminho do diretório do script
 SCRIPT_DIR="$DEST_DIR"
 DOTFILES_DIR="$SCRIPT_DIR"
 ZSHRC_SOURCE="$DOTFILES_DIR/zsh/zshrc"
