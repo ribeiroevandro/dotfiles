@@ -19,6 +19,17 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export ZSH="/Users/$(whoami)/.oh-my-zsh"
 export PATH="$PATH:/usr/local/bin"
 
+alias vim='nvim'
+alias vi='vim'
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
