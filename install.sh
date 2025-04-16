@@ -1,9 +1,20 @@
 #!/bin/bash
 
-# Pergunta a pasta de destino para o clone
-read -p "Digite o caminho da pasta de destino para o clone do repositório (ex: ~/dotfiles): " DEST_DIR
+# Uso: ./install.sh [PASTA_DE_DESTINO]
+# Ou defina a variável de ambiente DOTFILES_DEST_DIR
+
+# Define a pasta de destino
+if [ -n "$1" ]; then
+  DEST_DIR="$1"
+elif [ -n "$DOTFILES_DEST_DIR" ]; then
+  DEST_DIR="$DOTFILES_DEST_DIR"
+else
+  DEST_DIR="$HOME/dotfiles"
+fi
 DEST_DIR=${DEST_DIR/#\~/$HOME} # Expande ~ para $HOME
 REPO_URL="https://github.com/ribeiroevandro/dotfiles.git" # Substitua pelo seu repositório
+
+echo "[INFO] Usando a pasta de destino: $DEST_DIR"
 
 # Clona o repositório se a pasta não existir
 if [ ! -d "$DEST_DIR" ]; then
