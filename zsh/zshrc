@@ -7,6 +7,7 @@ dotfiles_path="$HOME/workspace/dotfiles"
 source "$HOME/.eas_credentials"
 source "$dotfiles_path/scripts/eas_environment.sh"
 source "$dotfiles_path/scripts/git.sh"
+source "$dotfiles_path/scripts/setup.sh"
 
 
 export ANDROID_HOME=$HOME/Android/Sdk
@@ -18,6 +19,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/$(whoami)/.oh-my-zsh"
 export PATH="$PATH:/usr/local/bin"
+
+
 
 alias vim='nvim'
 alias vi='vim'
