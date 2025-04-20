@@ -1,6 +1,7 @@
 set -gx DOTFILES_HOME "$HOME/workspace/dotfiles"
 
 source $DOTFILES_HOME/common/alias
+source $DOTFILES_HOME/fish/functions/git.fish
 
 if status is-interactive
 # Commands to run in interactive sessions can go here
