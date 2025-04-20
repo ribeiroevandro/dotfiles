@@ -8,6 +8,7 @@ source "$HOME/.eas_credentials"
 source "$dotfiles_path/scripts/eas_environment.sh"
 source "$dotfiles_path/scripts/git.sh"
 source "$dotfiles_path/scripts/setup.sh"
+source "$dotfiles_path/common/alias"
 
 
 export ANDROID_HOME=$HOME/Android/Sdk
@@ -19,11 +20,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/$(whoami)/.oh-my-zsh"
 export PATH="$PATH:/usr/local/bin"
-
-
-
-alias vim='nvim'
-alias vi='vim'
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
@@ -53,29 +49,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configurations
 
-alias rm="safe-rm"
-
 # Emulators
-alias nexus5="emulator @Nexus_5"
-alias nexus5Play="emulator @Nexus_5_Play"
-alias z=zoxide
-
-# Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
-# Clean Desktop
-alias cleandesk="rm ~/Desktop/Screen*.png && rm ~/Desktop/Simulator*.png"
-
-# Reload the shell (i.e. invoke as a login shell)
-alias reload="exec $SHELL -l"
-
-# Edit .zshrc
-alias zedit="vim ~/.dotfiles/.zshrc"
-
-# Edit .vimrc
-alias vedit="vim ~/.dotfiles/.vimrc"
-
-alias z="zoxide"
 
 # Expo Accounts
 # alias expersonal="expo logout && expo login -u 'username' -p 'password'"
