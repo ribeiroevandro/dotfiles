@@ -1,1 +1,1 @@
-{"analytics": {"last_report": 0, "distinct_id": "314df84e-dcdd-4c47-880c-33d516b56f1d"}, "feature_flags": {"flags": [], "updated_at": 0}, "circuit_breaker": {"updated_at": 1744842830, "enabled": true}}
+{"analytics": {"last_report": 1745007107, "distinct_id": "314df84e-dcdd-4c47-880c-33d516b56f1d"}, "feature_flags": {"flags": {"ANALYTICS": true}, "updated_at": 1745007107}, "circuit_breaker": {"updated_at": 0, "enabled": false}}

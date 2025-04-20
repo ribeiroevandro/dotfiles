@@ -7,7 +7,7 @@ return {
 		adaptive_size = false,
 	},
 	filters = {
-		dotfiles = false,
+		dotfiles = true,
 		exclude = { "github.*" },
 	},
 }

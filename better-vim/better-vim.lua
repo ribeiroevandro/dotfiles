@@ -15,6 +15,7 @@ return {
 		catppuccin_flavour = "mocha"
 	},
 	lsps = {
+		biome = {},
 		prismals = {},
 		astro = {},
 		tailwindcss = {},
@@ -34,7 +35,8 @@ return {
 	},
 	treesitter = "all",
 	flags = {
-		format_on_save = true
+		format_on_save = true,
+		experimental_tsserver = true
 	},
 	hooks = {
 		after_setup = function()
