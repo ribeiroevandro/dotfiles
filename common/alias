@@ -1,0 +1,14 @@
+# Aliases
+alias reload="exec $SHELL -l"
+alias vim='nvim'
+alias vi='vim'
+alias rm="safe-rm"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo Github)"
+alias l="ls -la"
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --oneline"
+alias cd="z"
+alias g="git"
