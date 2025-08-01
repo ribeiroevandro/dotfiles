@@ -7,8 +7,19 @@ alias rm="safe-rm"
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
+# Clean Desktop
+alias cleandesk="rm ~/Desktop/Screen*.png && rm ~/Desktop/Simulator*.png"
+
 alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo Github)"
 alias l="ls -la"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --oneline"
 alias cd="z"
 alias g="git"
+
+# Artisan Laravel
+alias pa="php artisan"
+alias acc="php artisan clear-compiled && php artisan view:clear && php artisan route:clear"
+
+alias pn "pnpm"
+
+alias py="python3"

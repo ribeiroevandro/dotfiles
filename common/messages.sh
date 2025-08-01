@@ -12,10 +12,10 @@
 #  37  # White   #
 ##################
 
-user_logged() {
-     echo -e "\033[1;32m$1\033[0m"
-}
+# user_logged() {
+#      echo -e "\033[1;32m$1\033[0m"
+# }
 
-auth_message() {
-    echo -e "\033[0;35m$1\033[0;35m realizado com sucesso." 
-}
+# auth_message() {
+#     echo -e "\033[0;35m$1\033[0;35m realizado com sucesso." 
+# }
