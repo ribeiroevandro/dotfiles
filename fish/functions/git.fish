@@ -28,3 +28,10 @@ function delete-branches
         # Ignora silenciosamente quaisquer erros
     end
 end
+
+function gco
+  set branch (git branch --format='%(refname:short)' | fzf)
+  if test -n "$branch"
+    git switch "$branch"
+  end
+end
