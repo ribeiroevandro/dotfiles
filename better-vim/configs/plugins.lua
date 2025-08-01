@@ -13,7 +13,7 @@ return {
   { "jwalton512/vim-blade" },
   { "wojciechkepka/vim-github-dark" },
   { "rescript-lang/vim-rescript" },
-  { "github/copilot.vim" },
+  -- { "github/copilot.vim" },
   { "nvim-tree/nvim-web-devicons", opts = {} },
   -- {
   --   "andweeb/presence.nvim",
