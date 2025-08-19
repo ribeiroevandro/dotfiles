@@ -2,5 +2,8 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 add_newline = false
 
+# Aumenta o tempo limite para 2 segundos (2000ms)
+command_timeout = 2000
+
 [nodejs]
 disabled = false
