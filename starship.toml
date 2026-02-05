@@ -7,3 +7,6 @@ command_timeout = 2000
 
 [nodejs]
 disabled = false
+
+[gcloud]
+disabled = true

@@ -1,12 +1,34 @@
 #!/bin/zsh
 
 push() {
-  git push origin $(git_current_branch) $@
+  echo "push"
+  # git push origin $(git_current_branch) $@
 }
 
 pull() {
   git pull origin $(git_current_branch) $@
 }
+
+incoming() {
+  branch=$(git rev-parse --abbrev-ref HEAD)
+  if git rev-parse --abbrev-ref "$branch@{upstream}" &>/dev/null; then
+    git fetch --quiet
+    git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' .."$branch@{upstream}"
+  else
+    echo "Nenhum upstream configurado para o branch '$branch'"
+  fi
+}
+
+outgoing() {
+  branch=$(git rev-parse --abbrev-ref HEAD)
+  if git rev-parse --abbrev-ref "$branch@{upstream}" &>/dev/null; then
+    git fetch --quiet
+    git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' "$branch@{upstream}"..
+  else
+    echo "Nenhum upstream configurado para o branch '$branch'"
+  fi
+}
+
 
 delete-branches() {
   git worktree prune

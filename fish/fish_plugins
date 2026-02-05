@@ -6,3 +6,7 @@ g-plane/pnpm-shell-completion
 decors/fish-colored-man
 plttn/fish-eza
 edc/bass
+jorgebucaran/autopair.fish
+jorgebucaran/fishtape
+ribeiroevandro/initproject.fish
+~/workspace/github/pessoal/opensource/init-project

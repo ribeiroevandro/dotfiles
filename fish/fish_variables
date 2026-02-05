@@ -1,18 +1,50 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export EZA_LAAD_OPTIONS:\x2d\x2dall\x1e\x2d\x2dall\x1e\x2d\x2dbinary\x1e\x2d\x2donly\x2ddirs
+SETUVAR --export EZA_LAAID_OPTIONS:\x2d\x2dall\x1e\x2d\x2dall\x1e\x2d\x2dbinary\x1e\x2d\x2dicons\x1e\x2d\x2donly\x2ddirs
+SETUVAR --export EZA_LAAI_OPTIONS:\x2d\x2dall\x1e\x2d\x2dall\x1e\x2d\x2dbinary\x1e\x2d\x2dicons
+SETUVAR --export EZA_LAA_OPTIONS:\x2d\x2dall\x1e\x2d\x2dall\x1e\x2d\x2dbinary
+SETUVAR --export EZA_LAD_OPTIONS:\x2d\x2dall\x1e\x2d\x2dbinary\x1e\x2d\x2donly\x2ddirs
+SETUVAR --export EZA_LAID_OPTIONS:\x2d\x2dall\x1e\x2d\x2dbinary\x1e\x2d\x2dicons\x1e\x2d\x2donly\x2ddirs
+SETUVAR --export EZA_LAI_OPTIONS:\x2d\x2dall\x1e\x2d\x2dbinary\x1e\x2d\x2dicons
+SETUVAR --export EZA_LA_OPTIONS:\x2d\x2dall\x1e\x2d\x2dbinary
+SETUVAR --export EZA_LC_OPTIONS:\x2d\x2dacross
+SETUVAR --export EZA_LD_OPTIONS:\x2d\x2donly\x2ddirs
+SETUVAR --export EZA_LE_OPTIONS:\x2d\x2dextended\x1e\x2d\x2dlong
+SETUVAR --export EZA_LG_OPTIONS:\x2d\x2dgit\x1e\x2d\x2dgit\x2dignore\x1e\x2d\x2dlong
+SETUVAR --export EZA_LID_OPTIONS:\x2d\x2dicons\x1e\x2d\x2donly\x2ddirs
+SETUVAR --export EZA_LI_OPTIONS:\x2d\x2dicons
+SETUVAR --export EZA_LL_OPTIONS:\x2d\x2dlong
+SETUVAR --export EZA_LO_OPTIONS:\x2d\x2doneline
+SETUVAR --export EZA_LT_OPTIONS:\x2d\x2dtree\x1e\x2d\x2dlevel
+SETUVAR --export EZA_L_OPTIONS:\x1d
+SETUVAR --export EZA_STANDARD_OPTIONS:\x2d\x2dgroup\x1e\x2d\x2dheader\x1e\x2d\x2dgroup\x2ddirectories\x2dfirst
+SETUVAR --export --path PATH:/usr/local/lib/ruby/gems/3\x2e4\x2e0/bin\x1e/Users/EvandroBaia/Library/Application\x20Support/Herd/bin/\x1e/Users/EvandroBaia/\x2envm/versions/node/v22\x2e18\x2e0/bin\x1e/Users/EvandroBaia/\x2ecomposer/vendor/bin\x1e/Users/EvandroBaia/Android/Sdk/platform\x2dtools\x1e/Users/EvandroBaia/Android/Sdk/tools/bin\x1e/Users/EvandroBaia/Android/Sdk/tools\x1e/Users/EvandroBaia/Library/Application\x20Support/Herd/bin\x1e/Users/EvandroBaia/Android/Sdk\x1e/opt/homebrew/bin\x1e/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/Library/Apple/usr/bin\x1e/Users/EvandroBaia/\x2ebun/bin\x1e/usr/local/opt/ruby/bin\x1e/Users/EvandroBaia/Android/Sdk/emulator\x1e/Users/EvandroBaia/Library/Application\x20Support/Herd/bin/\x1e/Users/EvandroBaia/\x2envm/versions/node/v22\x2e18\x2e0/bin\x1e/Users/EvandroBaia/Library/pnpm
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
-SETUVAR Z_DATA:/Users/ribeiroevandro/\x2elocal/share/z/data
-SETUVAR Z_DATA_DIR:/Users/ribeiroevandro/\x2elocal/share/z
-SETUVAR Z_EXCLUDE:\x5e/Users/ribeiroevandro\x24
+SETUVAR Z_DATA:/Users/EvandroBaia/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/Users/EvandroBaia/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:\x5e/Users/EvandroBaia\x24
+SETUVAR --export __FISH_EZA_ALIASES:l\x1ela\x1eld\x1eli\x1elid\x1elaa\x1elad\x1elai\x1elaid\x1elaad\x1elaai\x1elaaid\x1ell\x1ella\x1elld\x1elli\x1ellid\x1ellaa\x1ellad\x1ellai\x1ellaid\x1ellaad\x1ellaai\x1ellaaid\x1elg\x1elga\x1elgd\x1elgi\x1elgid\x1elgaa\x1elgad\x1elgai\x1elgaid\x1elgaad\x1elgaai\x1elgaaid\x1ele\x1elea\x1eled\x1elei\x1eleid\x1eleaa\x1elead\x1eleai\x1eleaid\x1eleaad\x1eleaai\x1eleaaid\x1elt\x1elta\x1eltd\x1elti\x1eltid\x1eltad\x1eltai\x1eltaid\x1eltaad\x1eltaai\x1eltaaid\x1elc\x1elca\x1elcd\x1elci\x1elcid\x1elcaa\x1elcad\x1elcai\x1elcaid\x1elcaad\x1elcaai\x1elcaaid\x1elo\x1eloa\x1elod\x1eloi\x1eloid\x1eloaa\x1eload\x1eloai\x1eloaid\x1eloaad\x1eloaai\x1eloaaid
+SETUVAR --export __FISH_EZA_BASE_ALIASES:l\x1ell\x1elg\x1ele\x1elt\x1elc\x1elo
+SETUVAR --export __FISH_EZA_EXPANDED:a\x1ed\x1ei\x1eid\x1eaa\x1ead\x1eai\x1eaid\x1eaad\x1eaai\x1eaaid
+SETUVAR --export __FISH_EZA_EXPANDED_OPT_NAME:LA\x1eLD\x1eLI\x1eLID\x1eLAA\x1eLAD\x1eLAI\x1eLAID\x1eLAAD\x1eLAAI\x1eLAAID
+SETUVAR --export __FISH_EZA_OPT_NAMES:EZA_L_OPTIONS\x1eEZA_LA_OPTIONS\x1eEZA_LD_OPTIONS\x1eEZA_LI_OPTIONS\x1eEZA_LID_OPTIONS\x1eEZA_LAA_OPTIONS\x1eEZA_LAD_OPTIONS\x1eEZA_LAI_OPTIONS\x1eEZA_LAID_OPTIONS\x1eEZA_LAAD_OPTIONS\x1eEZA_LAAI_OPTIONS\x1eEZA_LAAID_OPTIONS\x1eEZA_LL_OPTIONS\x1eEZA_LG_OPTIONS\x1eEZA_LE_OPTIONS\x1eEZA_LT_OPTIONS\x1eEZA_LC_OPTIONS\x1eEZA_LO_OPTIONS
+SETUVAR --export __FISH_EZA_SORT_OPTIONS:name\x1e\x2ename\x1esize\x1eext\x1emod\x1eold\x1eacc\x1ecr\x1einode
 SETUVAR __fish_initialized:3800
+SETUVAR _fisher__2F_Users_2F_45_vandroBaia_2F_workspace_2F_github_2F_pessoal_2F_opensource_2F_init_2D_project_files:\x7e/\x2econfig/fish/functions/_initProject_exit_on_error\x2efish\x1e\x7e/\x2econfig/fish/functions/_initProject_setup_authenticate_github\x2efish\x1e\x7e/\x2econfig/fish/functions/_initProject_setup_check_gh_cli\x2efish\x1e\x7e/\x2econfig/fish/functions/_initProject_setup_configure_profile\x2efish\x1e\x7e/\x2econfig/fish/functions/_initProject_setup_get_base_path\x2efish\x1e\x7e/\x2econfig/fish/functions/_initProject_setup_get_github_user\x2efish\x1e\x7e/\x2econfig/fish/functions/_initProject_setup_init_config_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/_initProject_setup_write_config_header\x2efish\x1e\x7e/\x2econfig/fish/functions/_initProject_setup_write_profiles_list\x2efish\x1e\x7e/\x2econfig/fish/functions/hello\x2efish\x1e\x7e/\x2econfig/fish/functions/initProject\x2efish\x1e\x7e/\x2econfig/fish/functions/initProject_setup\x2efish\x1e\x7e/\x2econfig/fish/functions/load\x2efish
 SETUVAR _fisher_decors_2F_fish_2D_colored_2D_man_files:\x7e/\x2econfig/fish/functions/man\x2efish
+SETUVAR _fisher_edc_2F_bass_files:\x7e/\x2econfig/fish/functions/__bass\x2epy\x1e\x7e/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_g_2D_plane_2F_pnpm_2D_shell_2D_completion_files:\x7e/\x2econfig/fish/conf\x2ed/pnpm\x2dshell\x2dcompletion\x2efish
 SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
+SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fishtape_files:\x7e/\x2econfig/fish/functions/fishtape\x2efish\x1e\x7e/\x2econfig/fish/completions/fishtape\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
 SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_changed_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_diff_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_processes\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e\x7e/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e\x7e/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1epatrickf1/fzf\x2efish\x1ejorgebucaran/nvm\x2efish\x1eg\x2dplane/pnpm\x2dshell\x2dcompletion\x1edecors/fish\x2dcolored\x2dman
+SETUVAR _fisher_plttn_2F_fish_2D_eza_files:\x7e/\x2econfig/fish/functions/eza_git\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fish\x2deza\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1epatrickf1/fzf\x2efish\x1ejorgebucaran/nvm\x2efish\x1eg\x2dplane/pnpm\x2dshell\x2dcompletion\x1edecors/fish\x2dcolored\x2dman\x1eplttn/fish\x2deza\x1eedc/bass\x1eribeiroevandro/initproject\x2efish\x1ejorgebucaran/autopair\x2efish\x1ejorgebucaran/fishtape\x1e/Users/EvandroBaia/workspace/github/pessoal/opensource/init\x2dproject
+SETUVAR _fisher_ribeiroevandro_2F_initproject_2E_fish_files:\x7e/\x2econfig/fish/functions/hello\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2d\x2dreverse
@@ -53,4 +85,5 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/Users/ribeiroevandro/Android/Sdk/platform\x2dtools\x1e/Users/ribeiroevandro/Android/Sdk/tools/bin\x1e/Users/ribeiroevandro/Android/Sdk/tools\x1e/Users/ribeiroevandro/\x2ecomposer/vendor/bin\x1e/Users/ribeiroevandro/Android/Sdk\x1e/opt/homebrew/bin
+SETUVAR fish_user_paths:/Users/EvandroBaia/\x2eantigravity/antigravity/bin\x1e/Users/EvandroBaia/\x2elocal/bin\x1e/Users/EvandroBaia/\x2ecodeium/windsurf/bin\x1e/Users/EvandroBaia/\x2ecomposer/vendor/bin\x1e/Users/EvandroBaia/Android/Sdk/platform\x2dtools\x1e/Users/EvandroBaia/Android/Sdk/tools/bin\x1e/Users/EvandroBaia/Android/Sdk/tools\x1e/Users/EvandroBaia/Library/Application\x20Support/Herd/bin\x1e/Users/EvandroBaia/Android/Sdk\x1e/opt/homebrew/bin
+SETUVAR --export nvm_default_version:22\x2e18\x2e0

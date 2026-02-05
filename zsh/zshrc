@@ -168,7 +168,7 @@ zinit cdreplay -q
 eval "$(zoxide init zsh)"
 
 # bun completions
-[ -s "/Users/ribeiroevandro/.bun/_bun" ] && source "/Users/ribeiroevandro/.bun/_bun"
+[ -s "/Users/EvandroBaia/.bun/_bun" ] && source "/Users/EvandroBaia/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
